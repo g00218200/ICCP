@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登陆页面</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="pragma" content="no-cache"> 
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate"> 
+    <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+	
+	<!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/custom-base.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="jquery/jquery-1.11.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="col-md-12">
+			<h1 class="margin-bottom-15">
+			<strong><font color="#666666">青蛙<font color="#FFD700">皇子</font><small><strong>企业分销管理系统</strong></small></strong></font></h1>
+			<form class="form-horizontal loginstyle-container loginstyle-login-form-1 margin-bottom-30" role="form" id="theForm" action="$!webPath/xxshop_login.htm" method="post">				
+		        <div class="form-group">
+		          <div class="col-xs-12">		            
+		            <div class="control-wrapper">
+		            	<label for="username" class="control-label fa-label"><i class="icon-user icon-large"></i></label>
+		            	<input name="username" type="text" class="form-control" id="username" placeholder="账户">
+		            </div>		            	            
+		          </div>              
+		        </div>
+		        <div class="form-group">
+		          <div class="col-md-12">
+		          	<div class="control-wrapper">
+		            	<label for="password" class="control-label fa-label"><i class="icon-lock icon-large"></i></label>
+		            	<input name="password" autocomplete="off" type="password" class="form-control" id="password" placeholder="密码">
+		            </div>
+		          </div>
+		        </div>
+		        <div class="form-group">
+		          <div class="col-md-12">
+		            <div class="control-wrapper controls" style="white-space:nowrap">
+               		<input size="6" autocomplete="off" name="code" style="width:60px;" type="text" id="code" placeholder="&nbsp;验证码"/>
+		            <img src="$!webPath/verify.htm" style="margin-top:-3px;" id="code_img" onclick="refreshCode();"/>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="form-group">
+		          <div class="col-md-6">
+	             	<div class="checkbox control-wrapper">
+	                	<label>
+	                  		<input type="checkbox"> Remember me
+                		</label>
+	              	</div>
+		          </div>
+		          <div class="col-md-6">
+		          	<div class="control-wrapper pull-right">
+		          		<button type="button" onclick="login()" class="btn btn-success" value="Log in">登陆 <i class="icon-signin"></i></button>
+		          	</div>
+		          </div>
+		        </div>
+		        <hr>
+		        <div class="form-group">
+		        	<div class="col-md-12">
+		        		<label>其他账户：&nbsp;&nbsp;</label>
+		        		<div class="inline-block">
+			        		<a href="#"><img src="$!webPath/resources/style/images/QQ.png" width="30" height="30" /></a>
+		        			<a href="#" style="margin-left:10px;"><img src="$!webPath/resources/style/images/weixin.png" width="30" height="30" /></a>
+			        		<a href="#" style="margin-left:10px;"><img src="$!webPath/resources/style/images/zhifubao.png" width="30" height="30" /></a>
+		        		</div>        		
+		        	</div>
+		        </div>
+		        <input name="login_role" type="hidden" id="login_role" value="admin" />
+		      </form>
+		</div>
+	</div>
+</body>
+</html>

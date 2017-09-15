@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Home Page</title>
+    <!-- Bootstrap core CSS -->
+    <link href="$!webPath/resources/3rdparty/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap icon CSS -->
+    <link href="$!webPath/resources/3rdparty/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="$!webPath/resources/3rdparty/bootstrap/custom-base.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="$!webPath/resources/3rdparty/bootstrap/custom-frame.css" rel="stylesheet">
+</head>
+<style>
+
+</style>
+<!-- BEGIN BODY -->
+<body>
+    $!httpInclude.include("/head.htm")
+	<!-- BEGIN CONTAINER -->
+	<div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          $!httpInclude.include("/navigation.htm")
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div class="panel panel-default" style="height:500px;">
+		       <div class="panel-body">
+				<nav>
+			        <div class="btn-group" >
+					  <button type="button" class="btn btn-default" onclick="openURL('$!webPath/core/system_mgr.htm')"><i class="icon-reorder"></i>&nbsp;列表</button>
+					  <button type="button" class="btn btn-default" onclick="openURL('$!webPath/core/admin_add.htm')"><i class="icon-plus"></i>&nbsp;增加</button>
+					  <button type="button" class="btn btn-default" onclick="openURL('$!webPath/core/admin_mgr_step2.htm')"><i class="icon-user"></i>&nbsp;角色</button>
+					</div>
+	            </nav>
+		        <form style="margin-top:10px;" id="theForm" action="$!webPath/core/userrole_save.htm" method="post">
+				    <select multiple="multiple" id="element" size="10" name="roleids">
+				      #foreach($role in $allRolelist)
+				      <option value="$!role.id" 
+				      #foreach ($userrole in $userRolelist)
+				      #if ($!role.id == $!userrole.id)
+				      selected = "selected"
+				      #end
+				      #end
+				      >$!role.roleName</option>
+				      #end
+				    </select>
+				    <br>
+				    <ul class="pager">
+					    <li><a href="#" onclick="openURL('$!webPath/core/system_mgr.htm')">上一步</a></li>
+					    <li><a href="#" onclick="saveForm();">完成</a></li>
+					</ul>
+					<input type="hidden" id="userid" name="userid" value="$!user.id"></input>
+					<input type="hidden" id="username" name="username" value="$!user.userName"></input>
+				</form>
+			</div>
+		  </div>
+        </div>
+     </div>
+    </div>
+    
+    <script>
+    $(function() {
+      $('#element')
+          .bootstrapDualListbox({
+            bootstrap2Compatible: false,
+            moveAllLabel: 'MOVE ALL',
+            removeAllLabel: 'REMOVE ALL',
+            moveSelectedLabel: '右移',
+            removeSelectedLabel: '左移',
+            filterPlaceHolder: '输入过滤',
+            filterSelected: '2',
+            filterNonSelected: '1',
+            moveOnSelect: false,
+            preserveSelectionOnMove: 'all',
+            helperSelectNamePostfix: '_myhelper',
+            selectedListLabel: '【已选择】',
+            nonSelectedListLabel: '【未选择】'
+          })
+          .bootstrapDualListbox('setMoveAllLabel', '全部右移')
+          .bootstrapDualListbox('setRemoveAllLabel', '全部左移')
+          .bootstrapDualListbox('setSelectedFilter', undefined)
+          .bootstrapDualListbox('setNonSelectedFilter', undefined)
+          .bootstrapDualListbox('refresh')
+    });
+    
+    function saveForm(){
+      if ($("#element").val() == null) {
+    	  alert("至少选择一种角色！");
+    	  return;
+      }
+   	  $("#theForm").submit();
+   	}
+    </script>
+    
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="$!webPath/resources/3rdparty/duallistbox/bootstrap-duallistbox.css"></script>
+    <script src="$!webPath/resources/3rdparty/duallistbox/jquery.bootstrap-duallistbox.js"></script>
+</body>
+</html>

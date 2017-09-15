@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Home Page</title>
+    <!-- Bootstrap core CSS -->
+    <link href="$!webPath/resources/3rdparty/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="$!webPath/resources/3rdparty/bootstrap/custom-base.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="$!webPath/resources/3rdparty/bootstrap/custom-frame.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="$!webPath/resources/3rdparty/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<style>
+
+</style>
+<!-- BEGIN BODY -->
+<body>
+    $!httpInclude.include("/head.htm")
+	<!-- BEGIN CONTAINER -->
+	<div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          $!httpInclude.include("/navigation.htm")
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div class="panel panel-default" style="height:500px;">
+               <form class="form-inline" name="ListForm" id="ListForm" method="post" action="#">
+			   <div class="panel-body">
+			        <nav>
+				        <div class="btn-group" >
+						  <button type="button" class="btn btn-default" onclick="openURL('$!webPath/core/rights_rolelist.htm')"><i class="icon-reorder"></i>&nbsp;列表</button>
+						  <button type="button" class="btn btn-default" onclick="openURL('$!webPath/core/rights_roleadd.htm')"><i class="icon-plus"></i>&nbsp;增加</button>
+						  <button type="button" class="btn btn-default" onclick="batchExecute('$!webPath/core/rights_roledel.htm')"><i class="icon-remove"></i>&nbsp;删除</button>
+						</div>
+						<div class="navbar-right input-group" style="margin-right:0px;">
+					      <input type="text" name="condition" class="form-control input-sm" placeholder="Search...">
+					      <span class="input-group-btn">
+					        <button class="btn btn-default btn-sm" type="button"><i class="icon-search"></i></button>
+					      </span>
+			            </div>
+			        </nav>
+				    <table class="table table-condensed table-hover" style="margin-top:15px;">
+				      <tr class="active">
+					  <th>选择</th><th>角色名称</th><th>创建时间</th><th>相关描述</th><th>操作</th>
+					  </tr>
+					  #foreach($role in $rolelist)
+					  <tr>
+					  <td><input type="checkbox" value="$!role.id"></td>
+					  <td>$!role.roleName</td>
+					  <td>$!role.addTime</td>
+					  <td>$!role.roleDesc</td>
+					  <td>
+					  <div class="btn-group btn-group-xs">
+					  <a href="javascript:void()" onclick="openURL('$!webPath/core/rights_roleedit.htm?id=$!role.id');" style="font-size:14px;" ><i class="icon-pencil"></i></a>
+					  <a href="javascript:void()" onclick="openURL('$!webPath/core/rights_setting.htm?id=$!role.id')" style="font-size:14px;margin-left:10px;"><i class="icon-key"></i></a>
+					  </div>
+					  </td>
+					  </tr>
+				      #end
+				    </table>
+				    <input type="hidden" name="mulitId" id="mulitId" />
+			   </div><!-- end  panel-body -->
+			   </form><!-- end  form -->
+		   </div><!-- end panel-default -->
+        </div><!-- end main -->
+     </div><!-- end row -->
+    </div><!-- end container-fluid -->
+    
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="$!webPath/resources/3rdparty/jquery/jquery-1.11.1.min.js"></script>
+    <script src="$!webPath/resources/3rdparty/bootstrap/js/bootstrap.min.js"></script>
+    <script src="$!webPath/resources/script/common.js"></script>
+</body>
+</html>

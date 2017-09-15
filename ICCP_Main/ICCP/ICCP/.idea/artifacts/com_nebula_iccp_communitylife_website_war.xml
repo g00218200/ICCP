@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="com.nebula.iccp.communitylife.website:war">
+    <output-path>$PROJECT_DIR$/../src/CommunityLifeWebsite/com.nebula.iccp.communitylife.pkg/com.nebula.iccp.communitylife.website/target</output-path>
+    <root id="archive" name="com.nebula.iccp.communitylife.website-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="com.nebula.iccp.communitylife.website:war exploded" />
+    </root>
+  </artifact>
+</component>
