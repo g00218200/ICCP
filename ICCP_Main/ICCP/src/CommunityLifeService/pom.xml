@@ -14,7 +14,7 @@
   </parent>
 
   <modules>
-    <module>com.nebula.iccp.communitylife.service.pkg</module>
+    <module>communitylife-service-pkg</module>
   </modules>
 	
   <dependencies>
