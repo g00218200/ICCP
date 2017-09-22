@@ -4,7 +4,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="com.nebula.iccp.storediscount.website" />
+          <element id="module-output" name="storediscount-website" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:8.5.4" />
@@ -133,9 +133,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/../src/StoreDiscountWebsite/com.nebula.iccp.storediscount.website.pkg/com.nebula.iccp.storediscount.website/target/com.nebula.iccp.storediscount.website-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/../src/StoreDiscountWebsite/storediscount-website-pkg/storediscount-website/target/com.nebula.iccp.storediscount.website-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="com.nebula.iccp.storediscount.website/web/Web" />
+      <element id="javaee-facet-resources" facet="storediscount-website/web/Web" />
     </root>
   </artifact>
 </component>

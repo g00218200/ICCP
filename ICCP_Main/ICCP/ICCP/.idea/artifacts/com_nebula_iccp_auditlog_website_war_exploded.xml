@@ -133,7 +133,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/../src/AuditLogWebsite/com.nebula.iccp.auditlog.website.pkg/com.nebula.iccp.auditlog.website/target/com.nebula.iccp.auditlog.website-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/../src/AuditLogWebsite/auditlog-website-pkg/auditlog-website/target/com.nebula.iccp.auditlog.website-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="com.nebula.iccp.auditlog.website/web/Web" />
     </root>

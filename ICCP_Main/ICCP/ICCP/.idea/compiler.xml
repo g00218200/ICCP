@@ -6,15 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="auditlog-api" />
+        <module name="auditlog-service" />
+        <module name="auditlog-website" />
+        <module name="bus-api" />
+        <module name="bus-service" />
         <module name="com.nebula.iccp.auditlog.api" />
-        <module name="com.nebula.iccp.auditlog.service" />
         <module name="com.nebula.iccp.auditlog.service (1)" />
         <module name="com.nebula.iccp.auditlog.service (2)" />
-        <module name="com.nebula.iccp.auditlog.website" />
-        <module name="com.nebula.iccp.bus.api" />
-        <module name="com.nebula.iccp.bus.service" />
-        <module name="com.nebula.iccp.communitylife.api" />
-        <module name="com.nebula.iccp.communitylife.service" />
         <module name="com.nebula.iccp.countryfeatures.api" />
         <module name="com.nebula.iccp.countryfeatures.service" />
         <module name="com.nebula.iccp.countryfeatures.website" />
@@ -35,14 +34,39 @@
         <module name="com.nebula.iccp.users.service" />
         <module name="com.nebula.iccp.users.service (1)" />
         <module name="com.nebula.iccp.users.website" />
+        <module name="communitylife-api" />
+        <module name="communitylife-service" />
+        <module name="countryfeatures-api" />
+        <module name="countryfeatures-service" />
+        <module name="countryfeatures-website" />
+        <module name="dashboard-service" />
+        <module name="dashboard-website" />
+        <module name="kernel-eureka-service" />
+        <module name="kernel-ribbon-service" />
+        <module name="security-api" />
+        <module name="security-service" />
+        <module name="sharedprinting-api" />
+        <module name="sharedprinting-service" />
+        <module name="sharedprinting-website" />
+        <module name="storediscount-api" />
+        <module name="storediscount-service" />
+        <module name="storediscount-website" />
+        <module name="users-api" />
+        <module name="users-service" />
+        <module name="users-website" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="auditlog-api" target="1.8" />
+      <module name="auditlog-service" target="1.8" />
       <module name="auditlog-service-pkg" target="1.8" />
+      <module name="auditlog-website" target="1.8" />
       <module name="auditlog-website-pkg" target="1.8" />
       <module name="auditlog_service_pkg" target="1.8" />
       <module name="AuditLogService" target="1.8" />
       <module name="AuditLogWebsite" target="1.8" />
+      <module name="bus-api" target="1.8" />
+      <module name="bus-service" target="1.8" />
       <module name="bus-service-pkg" target="1.8" />
       <module name="BusService" target="1.8" />
       <module name="com.nebula.iccp.auditlog" target="1.8" />
@@ -50,19 +74,19 @@
       <module name="com.nebula.iccp.auditlog.pkg" target="1.8" />
       <module name="com.nebula.iccp.auditlog.pkg (1)" target="1.8" />
       <module name="com.nebula.iccp.auditlog.pkg (2)" target="1.8" />
-      <module name="com.nebula.iccp.auditlog.service" target="1.8" />
+      <module name="com.nebula.iccp.auditlog.service" target="1.5" />
       <module name="com.nebula.iccp.auditlog.service (1)" target="1.8" />
       <module name="com.nebula.iccp.auditlog.service (2)" target="1.8" />
       <module name="com.nebula.iccp.auditlog.service.pkg" target="1.8" />
-      <module name="com.nebula.iccp.auditlog.website" target="1.8" />
+      <module name="com.nebula.iccp.auditlog.website" target="1.5" />
       <module name="com.nebula.iccp.auditlog.website.pkg" target="1.8" />
-      <module name="com.nebula.iccp.bus.api" target="1.5" />
-      <module name="com.nebula.iccp.bus.service" target="1.5" />
+      <module name="com.nebula.iccp.bus.api" target="1.8" />
+      <module name="com.nebula.iccp.bus.service" target="1.8" />
       <module name="com.nebula.iccp.bus.service.pkg" target="1.8" />
       <module name="com.nebula.iccp.business.service" target="1.5" />
-      <module name="com.nebula.iccp.communitylife.api" target="1.8" />
+      <module name="com.nebula.iccp.communitylife.api" target="1.5" />
       <module name="com.nebula.iccp.communitylife.pkg" target="1.8" />
-      <module name="com.nebula.iccp.communitylife.service" target="1.8" />
+      <module name="com.nebula.iccp.communitylife.service" target="1.5" />
       <module name="com.nebula.iccp.communitylife.service.pkg" target="1.8" />
       <module name="com.nebula.iccp.communitylife.website" target="1.8" />
       <module name="com.nebula.iccp.communitylife.website.pkg" target="1.8" />
@@ -72,9 +96,9 @@
       <module name="com.nebula.iccp.countryfeatures.service.pkg" target="1.8" />
       <module name="com.nebula.iccp.countryfeatures.website" target="1.8" />
       <module name="com.nebula.iccp.countryfeatures.website.pkg" target="1.8" />
-      <module name="com.nebula.iccp.dashboard.api" target="1.8" />
+      <module name="com.nebula.iccp.dashboard.api" target="1.5" />
       <module name="com.nebula.iccp.dashboard.pkg" target="1.8" />
-      <module name="com.nebula.iccp.dashboard.service" target="1.8" />
+      <module name="com.nebula.iccp.dashboard.service" target="1.5" />
       <module name="com.nebula.iccp.dashboard.service (1)" target="1.8" />
       <module name="com.nebula.iccp.dashboard.service.pkg" target="1.8" />
       <module name="com.nebula.iccp.dashboard.website" target="1.8" />
@@ -82,7 +106,7 @@
       <module name="com.nebula.iccp.kernel.eureka.pkg" target="1.8" />
       <module name="com.nebula.iccp.kernel.eureka.service" target="1.8" />
       <module name="com.nebula.iccp.kernel.eureka.service.pkg" target="1.8" />
-      <module name="com.nebula.iccp.kernel.ribbon.service" target="1.8" />
+      <module name="com.nebula.iccp.kernel.ribbon.service" target="1.5" />
       <module name="com.nebula.iccp.kernel.service.pkg" target="1.8" />
       <module name="com.nebula.iccp.security.api" target="1.8" />
       <module name="com.nebula.iccp.security.pkg" target="1.8" />
@@ -109,25 +133,59 @@
       <module name="com.nebula.iccp.users.website" target="1.8" />
       <module name="com.nebula.iccp.users.website.pkg" target="1.8" />
       <module name="CommunityBusinessService" target="1.8" />
+      <module name="communitylife-api" target="1.8" />
+      <module name="communitylife-service" target="1.8" />
       <module name="communitylife-service-pkg" target="1.8" />
+      <module name="communitylife-website" target="1.8" />
+      <module name="communitylife-website-pkg" target="1.8" />
       <module name="CommunityLifeService" target="1.8" />
       <module name="CommunityLifeWebsite" target="1.8" />
+      <module name="countryfeatures-api" target="1.8" />
+      <module name="countryfeatures-service" target="1.8" />
+      <module name="countryfeatures-service-pkg" target="1.8" />
+      <module name="countryfeatures-website" target="1.8" />
+      <module name="countryfeatures-website-pkg" target="1.8" />
       <module name="CountryFeaturesService" target="1.8" />
       <module name="CountryFeaturesWebsite" target="1.8" />
+      <module name="dashboard-service" target="1.5" />
+      <module name="dashboard-service-pkg" target="1.8" />
+      <module name="dashboard-website" target="1.8" />
+      <module name="dashboard-website-pkg" target="1.8" />
       <module name="DashboardService" target="1.8" />
       <module name="DashboardService (1)" target="1.8" />
       <module name="DashboardService (2)" target="1.8" />
       <module name="DashboardWebsite" target="1.8" />
+      <module name="kernel-eureka-service" target="1.8" />
+      <module name="kernel-ribbon-service" target="1.8" />
+      <module name="kernel-service-pkg" target="1.8" />
       <module name="KernelService" target="1.8" />
       <module name="root" target="1.8" />
+      <module name="security-api" target="1.8" />
+      <module name="security-service" target="1.8" />
+      <module name="security-service-pkg" target="1.8" />
       <module name="SecurityService" target="1.8" />
+      <module name="sharedprinting-api" target="1.8" />
+      <module name="sharedprinting-service" target="1.8" />
+      <module name="sharedprinting-service-pkg" target="1.8" />
+      <module name="sharedprinting-website" target="1.8" />
+      <module name="sharedprinting-website-pkg" target="1.8" />
       <module name="SharedPrintingService" target="1.8" />
       <module name="SharedPrintingService (1)" target="1.8" />
       <module name="SharedPrintingService (2)" target="1.8" />
       <module name="SharedPrintingWebsite" target="1.8" />
+      <module name="storediscount-api" target="1.8" />
+      <module name="storediscount-service" target="1.8" />
+      <module name="storediscount-service-pkg" target="1.8" />
+      <module name="storediscount-website" target="1.8" />
+      <module name="storediscount-website-pkg" target="1.8" />
       <module name="StoreDiscountService" target="1.8" />
       <module name="StoreDiscountWebsite" target="1.8" />
       <module name="StoryDiscountService" target="1.8" />
+      <module name="users-api" target="1.8" />
+      <module name="users-service" target="1.8" />
+      <module name="users-service-pkg" target="1.8" />
+      <module name="users-website" target="1.8" />
+      <module name="users-website-pkg" target="1.8" />
       <module name="UsersService" target="1.8" />
       <module name="UsersWebsite" target="1.8" />
     </bytecodeTargetLevel>

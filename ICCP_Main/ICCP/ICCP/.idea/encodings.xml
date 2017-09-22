@@ -3,90 +3,65 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/../src" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../src/AuditLogService" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/AuditLogService/auditlog_service_pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/AuditLogService/com.nebula.iccp.auditlog" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/AuditLogService/com.nebula.iccp.auditlog.service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/AuditLogService/com.nebula.iccp.auditlog.service.pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/AuditLogService/com.nebula.iccp.auditlog.service.pkg/com.nebula.iccp.auditlog.api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/AuditLogService/com.nebula.iccp.auditlog.service.pkg/com.nebula.iccp.auditlog.service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/AuditLogService/com.nebula.iccp.auditlog/com.nebula.iccp.auditlog.service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/AuditLogService/auditlog-service-pkg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/AuditLogService/auditlog-service-pkg/auditlog-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/AuditLogService/auditlog-service-pkg/auditlog-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../src/AuditLogWebsite" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/AuditLogWebsite/com.nebula.iccp.auditlog" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/AuditLogWebsite/com.nebula.iccp.auditlog.website" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/AuditLogWebsite/com.nebula.iccp.auditlog.website.pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/AuditLogWebsite/com.nebula.iccp.auditlog.website.pkg/com.nebula.iccp.auditlog.website" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/AuditLogWebsite/com.nebula.iccp.auditlog/com.nebula.iccp.auditlog.website" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/AuditLogWebsite/auditlog-website-pkg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/AuditLogWebsite/auditlog-website-pkg/auditlog-website" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../src/BusService" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/BusService/com.nebula.iccp.bus.service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/BusService/com.nebula.iccp.bus.service.pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/BusService/com.nebula.iccp.bus.service.pkg/com.nebula.iccp.bus.api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/BusService/com.nebula.iccp.bus.service.pkg/com.nebula.iccp.bus.service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/BusService/bus-service-pkg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/BusService/bus-service-pkg/bus-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/BusService/bus-service-pkg/bus-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../src/CommunityLifeService" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/CommunityLifeService/com.nebula.iccp.communitylife.service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/CommunityLifeService/com.nebula.iccp.communitylife.service.pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/CommunityLifeService/com.nebula.iccp.communitylife.service.pkg/com.nebula.iccp.communitylife.api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/CommunityLifeService/com.nebula.iccp.communitylife.service.pkg/com.nebula.iccp.communitylife.service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/CommunityLifeService/communitylife-service-pkg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/CommunityLifeService/communitylife-service-pkg/communitylife-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/CommunityLifeService/communitylife-service-pkg/communitylife-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../src/CommunityLifeWebsite" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/CommunityLifeWebsite/com.nebula.iccp.communitylife.pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/CommunityLifeWebsite/com.nebula.iccp.communitylife.pkg/com.nebula.iccp.communitylife.website" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/CommunityLifeWebsite/com.nebula.iccp.communitylife.website" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/CommunityLifeWebsite/com.nebula.iccp.communitylife.website.pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/CommunityLifeWebsite/com.nebula.iccp.communitylife.website.pkg/com.nebula.iccp.communitylife.website" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/CommunityLifeWebsite/communitylife-website-pkg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/CommunityLifeWebsite/communitylife-website-pkg/communitylife-website" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../src/CountryFeaturesService" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/CountryFeaturesService/com.nebula.iccp.countryfeatures.service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/CountryFeaturesService/com.nebula.iccp.countryfeatures.service.pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/CountryFeaturesService/com.nebula.iccp.countryfeatures.service.pkg/com.nebula.iccp.countryfeatures.api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/CountryFeaturesService/com.nebula.iccp.countryfeatures.service.pkg/com.nebula.iccp.countryfeatures.service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/CountryFeaturesService/countryfeatures-service-pkg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/CountryFeaturesService/countryfeatures-service-pkg/countryfeatures-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/CountryFeaturesService/countryfeatures-service-pkg/countryfeatures-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../src/CountryFeaturesWebsite" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/CountryFeaturesWebsite/com.nebula.iccp.countryfeatures.website" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/CountryFeaturesWebsite/com.nebula.iccp.countryfeatures.website.pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/CountryFeaturesWebsite/com.nebula.iccp.countryfeatures.website.pkg/com.nebula.iccp.countryfeatures.website" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/CountryFeaturesWebsite/countryfeatures-website-pkg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/CountryFeaturesWebsite/countryfeatures-website-pkg/countryfeatures-website" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../src/DashboardService" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/DashboardService/com.nebula.iccp.dashboard.service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/DashboardService/com.nebula.iccp.dashboard.service.pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/DashboardService/com.nebula.iccp.dashboard.service.pkg/com.nebula.iccp.dashboard.api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/DashboardService/com.nebula.iccp.dashboard.service.pkg/com.nebula.iccp.dashboard.service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/DashboardService/dashboard-service-pkg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/DashboardService/dashboard-service-pkg/dashboard-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/DashboardService/dashboard-service-pkg/dashboard-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../src/DashboardWebsite" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/DashboardWebsite/com.nebula.iccp.dashboard.website" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/DashboardWebsite/com.nebula.iccp.dashboard.website.pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/DashboardWebsite/com.nebula.iccp.dashboard.website.pkg/com.nebula.iccp.dashboard.website" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/DashboardWebsite/dashboard-website-pkg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/DashboardWebsite/dashboard-website-pkg/dashboard-website" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../src/KernelService" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/KernelService/com.nebula.iccp.kernel.eureka.service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/KernelService/com.nebula.iccp.kernel.ribbon.service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/KernelService/com.nebula.iccp.kernel.service.pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/KernelService/com.nebula.iccp.kernel.service.pkg/com.nebula.iccp.kernel.eureka.service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/KernelService/com.nebula.iccp.kernel.service.pkg/com.nebula.iccp.kernel.ribbon.service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/KernelService/kernel-service-pkg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/KernelService/kernel-service-pkg/kernel-eureka-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/KernelService/kernel-service-pkg/kernel-ribbon-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../src/SecurityService" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/SecurityService/com.nebula.iccp.security.service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/SecurityService/com.nebula.iccp.security.service.pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/SecurityService/com.nebula.iccp.security.service.pkg/com.nebula.iccp.security.api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/SecurityService/com.nebula.iccp.security.service.pkg/com.nebula.iccp.security.service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/SecurityService/security-service-pkg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/SecurityService/security-service-pkg/security-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/SecurityService/security-service-pkg/security-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../src/SharedPrintingService" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/SharedPrintingService/com.nebula.iccp.sharedprinting.service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/SharedPrintingService/com.nebula.iccp.sharedprinting.service.pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/SharedPrintingService/com.nebula.iccp.sharedprinting.service.pkg/com.nebula.iccp.sharedprinting.api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/SharedPrintingService/com.nebula.iccp.sharedprinting.service.pkg/com.nebula.iccp.sharedprinting.service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/SharedPrintingService/sharedprinting-service-pkg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/SharedPrintingService/sharedprinting-service-pkg/sharedprinting-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/SharedPrintingService/sharedprinting-service-pkg/sharedprinting-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../src/SharedPrintingWebsite" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/SharedPrintingWebsite/com.nebula.iccp.sharedprinting.website" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/SharedPrintingWebsite/com.nebula.iccp.sharedprinting.website.pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/SharedPrintingWebsite/com.nebula.iccp.sharedprinting.website.pkg/com.nebula.iccp.sharedprinting.website" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/SharedPrintingWebsite/sharedprinting-website-pkg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/SharedPrintingWebsite/sharedprinting-website-pkg/sharedprinting-website" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../src/StoreDiscountService" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/StoreDiscountService/com.nebula.iccp.storediscount.service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/StoreDiscountService/com.nebula.iccp.storediscount.service.pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/StoreDiscountService/com.nebula.iccp.storediscount.service.pkg/com.nebula.iccp.storediscount.api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/StoreDiscountService/com.nebula.iccp.storediscount.service.pkg/com.nebula.iccp.storediscount.service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/StoreDiscountService/storediscount-service-pkg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/StoreDiscountService/storediscount-service-pkg/storediscount-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/StoreDiscountService/storediscount-service-pkg/storediscount-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../src/StoreDiscountWebsite" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/StoreDiscountWebsite/com.nebula.iccp.storediscount.website" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/StoreDiscountWebsite/com.nebula.iccp.storediscount.website.pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/StoreDiscountWebsite/com.nebula.iccp.storediscount.website.pkg/com.nebula.iccp.storediscount.website" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/StoreDiscountWebsite/storediscount-website-pkg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/StoreDiscountWebsite/storediscount-website-pkg/storediscount-website" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../src/UsersService" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/UsersService/com.nebula.iccp.users.service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/UsersService/com.nebula.iccp.users.service.pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/UsersService/com.nebula.iccp.users.service.pkg/com.nebula.iccp.users.api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/UsersService/com.nebula.iccp.users.service.pkg/com.nebula.iccp.users.service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/UsersService/users-service-pkg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/UsersService/users-service-pkg/users-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/UsersService/users-service-pkg/users-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../src/UsersWebsite" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/UsersWebsite/com.nebula.iccp.users.website" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/UsersWebsite/com.nebula.iccp.users.website.pkg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../src/UsersWebsite/com.nebula.iccp.users.website.pkg/com.nebula.iccp.users.website" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/UsersWebsite/users-website-pkg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../src/UsersWebsite/users-website-pkg/users-website" charset="UTF-8" />
   </component>
 </project>
