@@ -13,7 +13,7 @@
   </parent>
   
   <modules>
-    <module>com.nebula.iccp.users.service.pkg</module>
+    <module>users-service-pkg</module>
   </modules>
 	
 </project>
