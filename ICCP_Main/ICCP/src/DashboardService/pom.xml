@@ -14,7 +14,7 @@
   </parent>
   
   <modules>
-    <module>com.nebula.iccp.dashboard.service.pkg</module>
+    <module>dashboard-service-pkg</module>
   </modules>
 	
   <dependencies>
