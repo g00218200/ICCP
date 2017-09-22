@@ -13,7 +13,7 @@
   </parent>
   
   <modules>
-    <module>com.nebula.iccp.storediscount.website.pkg</module>
+    <module>storediscount-website-pkg</module>
   </modules>
 	
   <dependencies>
