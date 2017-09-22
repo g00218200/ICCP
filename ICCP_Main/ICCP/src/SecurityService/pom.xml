@@ -14,7 +14,7 @@
   </parent>
   
   <modules>
-    <module>com.nebula.iccp.security.service.pkg</module>
+    <module>security-service-pkg</module>
   </modules>
 	
   <dependencies>
