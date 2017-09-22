@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="com.nebula.iccp.storediscount.website:war">
-    <output-path>$PROJECT_DIR$/../src/StoreDiscountWebsite/com.nebula.iccp.storediscount.website.pkg/com.nebula.iccp.storediscount.website/target</output-path>
-    <root id="archive" name="com.nebula.iccp.storediscount.website-0.0.1-SNAPSHOT.war">
-      <element id="artifact" artifact-name="com.nebula.iccp.storediscount.website:war exploded" />
-    </root>
-  </artifact>
-</component>

@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="com.nebula.iccp.sharedprinting.website:war">
-    <output-path>$PROJECT_DIR$/../src/SharedPrintingWebsite/com.nebula.iccp.sharedprinting.website.pkg/com.nebula.iccp.sharedprinting.website/target</output-path>
-    <root id="archive" name="com.nebula.iccp.sharedprinting.website-0.0.1-SNAPSHOT.war">
-      <element id="artifact" artifact-name="com.nebula.iccp.sharedprinting.website:war exploded" />
-    </root>
-  </artifact>
-</component>
