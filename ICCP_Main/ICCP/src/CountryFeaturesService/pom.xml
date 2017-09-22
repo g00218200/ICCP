@@ -14,7 +14,7 @@
   </parent>
   
   <modules>
-    <module>com.nebula.iccp.countryfeatures.service.pkg</module>
+    <module>countryfeatures-service-pkg</module>
   </modules>
 	
   <dependencies>
