@@ -13,7 +13,7 @@
   </parent>
   
   <modules>
-    <module>com.nebula.iccp.sharedprinting.service.pkg</module>
+    <module>sharedprinting-service-pkg</module>
   </modules>
 	
   <dependencies>
