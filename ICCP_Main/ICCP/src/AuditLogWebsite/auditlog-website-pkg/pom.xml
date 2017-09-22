@@ -3,17 +3,17 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>AuditLogService</artifactId>
+  <artifactId>auditlog-website-pkg</artifactId>
   <packaging>pom</packaging>
 
   <parent>
     <groupId>com.nebula.iccp</groupId>
-    <artifactId>root</artifactId>
+    <artifactId>AuditLogWebsite</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   
   <modules>
-    <module>auditlog-service-pkg</module>
+    <module>auditlog-website</module>
   </modules>
 	
   <dependencies>
