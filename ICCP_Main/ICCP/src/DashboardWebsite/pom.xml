@@ -13,7 +13,7 @@
   </parent>
   
   <modules>
-    <module>com.nebula.iccp.dashboard.website.pkg</module>
+    <module>dashboard-website-pkg</module>
   </modules>
 	
   <dependencies>
