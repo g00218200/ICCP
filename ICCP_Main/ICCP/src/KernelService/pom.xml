@@ -13,7 +13,7 @@
   </parent>
   
   <modules>
-    <module>com.nebula.iccp.kernel.service.pkg</module>
+    <module>kernel-service-pkg</module>
   </modules>
 	
   <dependencies>
