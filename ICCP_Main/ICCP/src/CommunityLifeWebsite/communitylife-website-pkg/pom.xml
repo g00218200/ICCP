@@ -13,9 +13,13 @@
 
 	<parent>
 		<groupId>com.nebula.iccp</groupId>
-		<artifactId>CommunitylifeWebsite</artifactId>
+		<artifactId>CommunityLifeWebsite</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+
+	<modules>
+		<module>communitylife-website</module>
+	</modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
