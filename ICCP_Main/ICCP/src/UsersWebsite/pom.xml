@@ -13,7 +13,7 @@
   </parent>
   
   <modules>
-    <module>com.nebula.iccp.users.website.pkg</module>
+    <module>users-website-pkg</module>
   </modules>
 	
   <dependencies>
