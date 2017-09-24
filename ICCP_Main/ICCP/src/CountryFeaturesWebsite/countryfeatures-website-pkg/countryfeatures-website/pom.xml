@@ -9,7 +9,7 @@
 	<packaging>war</packaging>
 
 	<name>countryfeatures-website</name>
-	<description></description>
+	<description> </description>
 
 	<parent>
 		<groupId>com.nebula.iccp</groupId>
