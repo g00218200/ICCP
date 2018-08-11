@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="G:\code\ICCP_Main\ICCP\src\UsersService\com.nebula.iccp.users.service.pkg\com.nebula.iccp.users.service\target/../../../release/repository" overwrite="true">
+    <fileset dir="G:\code\ICCP_Main\ICCP\src\UsersService\com.nebula.iccp.users.service.pkg\com.nebula.iccp.users.service\target" erroronmissingdir="false">
+      <include name="*.jar"/>
+    </fileset>
+  </copy>
+</target>
+</project>

@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.nebula</groupId>
-  <artifactId>security.service</artifactId>
+  <artifactId>security-service</artifactId>
   <packaging>jar</packaging>
 
   <parent>
