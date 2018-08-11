@@ -27,23 +27,8 @@
 	<module>UsersService</module>
 	<module>UsersWebsite</module>
 	
-	<module>AuditLogService</module>
-	<module>AuditLogWebsite</module>
-	
-	<module>StoreDiscountService</module>
-	<module>StoreDiscountWebsite</module>
-	
-	<module>CommunityLifeService</module>
-	<module>CommunityLifeWebsite</module>
-	
 	<module>DashboardService</module>
 	<module>DashboardWebsite</module>
-	
-	<module>CountryFeaturesService</module>
-	<module>CountryFeaturesWebsite</module>
-	
-	<module>SharedPrintingService</module>
-	<module>SharedPrintingWebsite</module>
 	
   </modules>
 

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Todo</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"/>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- 在使用 Cordova/PhoneGap 创建的 APP 中包含的文件，由 Cordova/PhoneGap 提供，(开发过程中显示 404) -->
+    <script src="app/app.js"></script>
+    <script src="cordova.js"></script>
+</head>
+<style>
+    .headtag{
+        position:relative;
+        height:20px;
+        border-left:5px solid #33CD5F;
+        margin-left:20px;
+        margin-top:10px;
+        padding-left:8px;
+    }
+    .circle{
+        width: 50px;
+        height: 50px;
+        background-color:#33CD5F;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        margin:auto;
+        padding-top:10px;
+        color:#fff;
+    }
+    span{
+        font-size: 15px;
+        font-family: Sans-serif;
+    }
+    .quickspan{
+        font-size:12px;
+    }
+</style>
+<body>
+<ion-header>
+  <ion-navbar>
+    <div class="bar bar-header bar-balanced">
+      <div class="row" style="margin:auto;text-align:center;height:44px;padding:0px;">
+          <div class="col" style="height:44px;padding-top:7px;">ICMT</div>
+          <div class="col" style="height:44px;padding:0px;">
+              <label class="item-input" style="width:200px;height:30px;border-radius:30px;padding:0px;padding-left:10px;background-color: #f0fae9">
+                  <i class="icon ion-ios-search placeholder-icon"></i>
+                  <input type="search" placeholder="search">
+              </label>
+          </div>
+      </div>
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="height:100%">
+  <ion-slide-box on-slide-changed="slideHasChanged($index)" auto-play="true" does-continue="true"
+                 slide-interval="2000" show-pager="true" pager-click="pageClick(index)"
+                 active-slide="model.activeIndex" delegate-handle="delegateHandler" ng-click="coverFlowClick()">
+    <ion-slides>
+      <ion-slide>
+          <div class="box">
+              <img src="../../assets/imgs/u1.jpg" width="100%" height="200px">
+          </div>
+      </ion-slide>
+      <ion-slide>
+          <div class="box">
+              <img src="../../assets/imgs/u1.jpg" width="100%" height="200px">
+          </div>
+      </ion-slide>
+      <ion-slide>
+          <div class="box">
+              <img src="../../assets/imgs/u1.jpg" width="100%" height="200px">
+          </div>
+      </ion-slide>
+    </ion-slides>
+  </ion-slide-box>
+  <div class="row responsive-break">
+      <div class="col" style="width: 100%;text-align: center">
+          <div class="col-demo">
+              <div class="circle" ><i class="icon ion-card" style="font-size: 30px;color:#fff;"></i></div><span class="quickspan">社区超市</span>
+          </div>
+      </div>
+      <div class="col" style="width: 100%;text-align: center">
+          <div class="col-demo">
+              <div class="circle" ><i class="icon ion-nuclear" style="font-size: 30px;"></i></div><span class="quickspan">社区圈子</span>
+          </div>
+      </div>
+      <div class="col" style="width: 100%;text-align: center">
+          <div class="col-demo">
+              <div class="circle" ><i class="icon ion-printer" style="font-size: 30px;"></i></div><span class="quickspan">共享打印</span>
+          </div>
+      </div>
+      <div class="col" style="width: 100%;text-align: center">
+          <div class="col-demo">
+              <div class="circle" ><i class="icon ion-model-s" style="font-size: 30px;"></i></div><span class="quickspan">同乡捎带</span>
+          </div>
+      </div>
+  </div>
+  <div class="row responsive-break">
+      <div class="col" style="width: 100%;text-align: center">
+          <div class="col-demo">
+              <div class="circle" ><i class="icon ion-android-restaurant" style="font-size: 30px;"></i></div><span class="quickspan">一村一品</span>
+          </div>
+      </div>
+      <div class="col" style="width: 100%;text-align: center">
+          <div class="col-demo">
+              <div class="circle" ><i class="icon ion-playstation" style="font-size: 30px;"></i></div><span class="quickspan">跳蚤市场</span>
+          </div>
+      </div>
+      <div class="col" style="width: 100%;text-align: center">
+          <div class="col-demo">
+              <div class="circle" ><i class="icon ion-leaf" style="font-size: 30px;"></i></div><span class="quickspan">家政服务</span>
+          </div>
+      </div>
+      <div class="col" style="width: 100%;text-align: center">
+          <div class="col-demo">
+              <div class="circle" ><i class="icon ion-radio-waves" style="font-size: 30px;"></i></div><span class="quickspan">智慧社区</span>
+          </div>
+      </div>
+  </div>
+  <div style="width: 100%;background-color: #D7FAC7">
+      <a href="#" class="item item-icon-left" style="background-color: #f0fae9;border:0px;padding-top:10px;height:40px;">
+          <i class="icon ion-speakerphone" style="font-size: 20px;"></i>
+          <span>打折秒杀</span>
+      </a>
+  </div>
+  <div  style="width: 100%;">
+      <div id="shengxian" class="headtag">
+          <span>生鲜蔬菜</span>
+      </div>
+      <div class="row responsive-break">
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s1.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s2.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s3.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s4.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+      </div>
+      <div class="row responsive-break">
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s4.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s3.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s2.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s1.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+      </div>
+  </div>
+  <div  style="width: 100%;">
+      <div id="shengxian" class="headtag">
+          <span>生活用品</span>
+      </div>
+      <div class="row responsive-break">
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s5.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s6.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s7.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s8.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+      </div>
+      <div class="row responsive-break">
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s8.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s7.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s6.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s5.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+      </div>
+  </div>
+  <div  style="width: 100%;">
+      <div id="shengxian" class="headtag">
+          <span>跳蚤市场</span>
+      </div>
+      <div class="row responsive-break">
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s9.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s10.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s11.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s12.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+      </div>
+      <div class="row responsive-break">
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s12.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s11.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s10.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/s9.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+      </div>
+  </div>
+  <div  style="width: 100%;">
+      <div id="shengxian" class="headtag">
+          <span>儿童玩具</span>
+      </div>
+      <div class="row responsive-break">
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/w1.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/w2.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/w3.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/w4.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+      </div>
+      <div class="row responsive-break">
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/w4.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/w3.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/w2.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+          <div class="col" style="width: 100%">
+              <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/w1.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+          </div>
+      </div>
+  </div>
+  <div style="width: 100%;background-color: #D7FAC7">
+      <a href="#" class="item item-icon-left" style="background-color: #f0fae9;border:0px;padding-top:10px;height:40px;">
+          <i class="icon ion-speakerphone" style="font-size: 20px;"></i>
+          <span>门票特惠</span>
+      </a>
+  </div>
+  <div class="row responsive-break">
+      <div class="col" style="width: 100%">
+          <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/m1.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+      </div>
+      <div class="col" style="width: 100%">
+          <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/m2.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+      </div>
+      <div class="col" style="width: 100%">
+          <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/m3.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+      </div>
+      <div class="col" style="width: 100%">
+          <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/m4.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+      </div>
+  </div>
+  <div class="row responsive-break">
+      <div class="col" style="width: 100%">
+          <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/m4.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+      </div>
+      <div class="col" style="width: 100%">
+          <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/m3.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+      </div>
+      <div class="col" style="width: 100%">
+          <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/m2.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+      </div>
+      <div class="col" style="width: 100%">
+          <div class="col-demo" style="text-align:center"><img src="../../assets/imgs/m1.jpg" width="80px;" height="80px;"><br/><span>共享打印</span></div>
+      </div>
+  </div>
+</ion-content>
+</body>
